@@ -18,6 +18,10 @@ pipeline {
             steps {
                 sh './jenkins/scripts/test.sh'
             }
+        }
+    }
+    post {
+        always {
             junit 'junit.xml'
         }
     }
