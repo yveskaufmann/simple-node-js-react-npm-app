@@ -10,7 +10,21 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
+    "test": "jest",
     "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-jest": "^22.2.2",
+    "jest": "^22.3.0",
+    "jest-junit": "^3.6.0",
+    "regenerator-runtime": "^0.11.1"
+  },
+  "jest": {
+    "browser": true,
+    "transformIgnorePatterns": [".*.svg"], 
+    "moduleFileExtensions": [
+      "js", "jsx", "json"
+    ]
   }
 }
